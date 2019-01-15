@@ -1,6 +1,8 @@
 #!/bin/bash
 # SELKS MENU System
 clear
+title="~*~*~*~*~*~*SELKS Toolbox Menu*~*~*~*~*~*~
+echo "$title"
 PS3='Select SELKS option: '
 options=("SELKS First time install" "Cleanup Database Logs" "Kernel Tuneup" "Disable Interface Offloading" "Inital Moloch Database Setup" "Disable Suricata PCAP Capture" "Enable Suricata PCAP Capture" "Reconfigure Listening Interface" "Setup IDS Interface" "IDPS Interface Tuneup" "SELKS Upgrade" "Quit")
 select opt in "${options[@]}"
@@ -57,6 +59,8 @@ do
     esac
     counter=1
     SAVEIFS=$IFS
+    clear
+    echo "~*~*~*~*SELKS Toolbox Menu*~*~*~*~"
     IFS=$(echo -en "\n\b")
     for i in ${options[@]};
     do
