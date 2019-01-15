@@ -53,7 +53,15 @@ do
         "Quit")
             break
             ;;
-    $(( ${#options[@]}+1 )) ) echo "Goodbye!"; break;;
-    *) echo "Invalid option. Try another one.";continue;;
+       *) echo invalid option;;
     esac
+    counter=1
+    SAVEIFS=$IFS
+    IFS=$(echo -en "\n\b")   # we set another delimiter, see also: https://www.cyberciti.biz/tips/handling-filenames-with-spaces-in-bash.html
+    for i in ${options[@]};
+    do
+        echo $counter')' $i
+        let 'counter+=1'
+    done
+    IFS=$SAVEIFS
 done
