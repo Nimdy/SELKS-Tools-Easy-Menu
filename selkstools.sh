@@ -59,7 +59,6 @@ do
     esac
     counter=1
     SAVEIFS=$IFS
-    clear
     echo "~*~*~*~*SELKS Toolbox Menu*~*~*~*~"
     IFS=$(echo -en "\n\b")
     for i in ${options[@]};
