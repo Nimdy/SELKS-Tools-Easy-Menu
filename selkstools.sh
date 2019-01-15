@@ -57,7 +57,7 @@ do
     esac
     counter=1
     SAVEIFS=$IFS
-    IFS=$(echo -en "\n\b")   # we set another delimiter, see also: https://www.cyberciti.biz/tips/handling-filenames-with-spaces-in-bash.html
+    IFS=$(echo -en "\n\b")
     for i in ${options[@]};
     do
         echo $counter')' $i
