@@ -1,7 +1,7 @@
 #!/bin/bash
 # SELKS MENU System
 clear
-title="~*~*~*~*~*~*SELKS Toolbox Menu*~*~*~*~*~*~
+title="~*~*~*~*~*~*SELKS Toolbox Menu*~*~*~*~*~*~"
 echo "$title"
 PS3='Select SELKS option: '
 options=("SELKS First time install" "Cleanup Database Logs" "Kernel Tuneup" "Disable Interface Offloading" "Inital Moloch Database Setup" "Disable Suricata PCAP Capture" "Enable Suricata PCAP Capture" "Reconfigure Listening Interface" "Setup IDS Interface" "IDPS Interface Tuneup" "SELKS Upgrade" "Quit")
@@ -34,7 +34,7 @@ do
             ;;
         "Enable Suricata PCAP Capture")
             echo "Enabling Suricata PCAP Capture"
-            /usr/bin/./selks-enable-suri-captuire_stamus.sh
+            /usr/bin/./selks-enable-suri-capture_stamus.sh
             ;;
         "Reconfigure Listening Interface")
             echo "Reconfiguring listening interface"
